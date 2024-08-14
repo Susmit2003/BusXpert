@@ -1,6 +1,4 @@
-# Node.js
-node_modules/
-
+# Node.j
 # Logs
 logs
 *.log
@@ -24,3 +22,10 @@ logs
 
 # Environment variables
 .env
+
+backend/.env
+frontend/.env
+backend/.gitignore
+frontend/.gitignore
+backend/node_modules
+frontend/node_modules
