@@ -2,8 +2,8 @@ import express from "express"
 import busAdmin from "./routes/busAdmin.routes.js"
 import dotenv from "dotenv";
 import user from "./routes/user.routes.js"
-import dotenv from "dotenv";
 import connectMongoDB from "./db/connectMongoDb.js"
+import cors from 'cors'
 dotenv.config();
 const app =express()
 
@@ -11,10 +11,10 @@ const app =express()
 
 const port = process.env.PORT
 
-
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
-app.use("/api/user",user)
+app.use("/api",user)
 
 
 
