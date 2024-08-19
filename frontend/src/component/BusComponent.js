@@ -1,8 +1,8 @@
-  import React from "react";
+import React from "react";
 
 function BusComponent(props) {
   return (
-    <div className="p-4 md:w-[660px] lg:w-[900px] rounded-md w-[300px] md:h-[150px] h-[150px] bg-slate-500">
+    <div className="p-4 md:w-[660px] lg:w-[900px] rounded-sm w-[300px] shadow-lg hover:shadow-md shadow-[#a3a2a2] md:h-[150px] h-[150px] bg-[#d9d8d8] cursor-pointer">
       <div className="flex justify-between">
         <h1 className="font-bold mb-2 text-xl">{`Bus No. ${props.Bus.busNumber}`}</h1>
         <div>

@@ -25,7 +25,7 @@ const Signupcom = () => {
     let endpoint = '';
 
     if (role === 'student') {
-      endpoint = 'http://localhost:5000/api/user/signup';
+      endpoint = `${window.env.BACKEND_URL}/api/user/signup`;
     } else if (role === 'busadmin') {
       endpoint = '/user/busadmin';
     } else if (role === 'bussuperadmin') {

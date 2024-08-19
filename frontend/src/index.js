@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css'
-
 import App from './App';
+
+// all the .env constant name should be start with the name REACT_APP
+{console.log(process.env.REACT_APP_API_URL)}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
      <App /> 
-   
   </React.StrictMode>
 );
 
